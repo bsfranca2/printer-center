@@ -1,4 +1,4 @@
-import { BubbleMenu, BubbleMenuProps, isNodeSelection } from '@tiptap/react';
+import { BubbleMenu, BubbleMenuProps, type Editor, isNodeSelection } from '@tiptap/react';
 import { FC, useState } from 'react';
 import {
   BoldIcon,
@@ -18,7 +18,7 @@ export interface BubbleMenuItem {
   icon: typeof BoldIcon;
 }
 
-type EditorBubbleMenuProps = Omit<BubbleMenuProps, 'children'>;
+type EditorBubbleMenuProps = Omit<BubbleMenuProps, 'children'> & { editor: Editor };
 
 export const EditorBubbleMenu: FC<EditorBubbleMenuProps> = (props) => {
   const items: BubbleMenuItem[] = [

@@ -8,7 +8,7 @@ import {
 import { Input } from '@printer-center/ui-components/components/ui/input';
 import { Label } from '@printer-center/ui-components/components/ui/label';
 
-export const QrCode = (props) => {
+export const QrCode = (props: any) => {
   return (
     <NodeViewWrapper>
       <Popover>

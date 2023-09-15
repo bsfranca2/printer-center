@@ -1,4 +1,4 @@
-import { CharacterSet } from '../CharacterSet';
+import { CharacterSet } from '../character-set';
 import { characterCodeTable } from './characterCodeTable';
 import { internationalCharacterSet } from './internationalCharacterSet';
 
