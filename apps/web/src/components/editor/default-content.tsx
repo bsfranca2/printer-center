@@ -1,7 +1,7 @@
 export const defaultEditorContent = {
   type: 'doc',
   content: [
-    { type: 'qrCode', attrs: { data: '123456789', size: '64', level: 'L' } },
+    { type: 'qrCode', attrs: { data: '123456789', size: '64', level: 'L', textAlign: 'center' } },
     {
       type: 'paragraph',
       attrs: { textAlign: 'center' },

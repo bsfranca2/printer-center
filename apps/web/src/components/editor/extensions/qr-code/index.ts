@@ -20,6 +20,9 @@ export default Node.create({
       level: {
         default: 'L',
       },
+      textAlign: {
+        default: 'left',
+      },
     };
   },
 
