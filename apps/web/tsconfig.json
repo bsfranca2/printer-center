@@ -8,6 +8,7 @@
     "types": ["vite/client", "vitest"],
     "paths": {
       "~/*": ["apps/web/src/*"],
+      "@printer-center/core": ["libs/core/src/index.ts"],
       "@printer-center/ui-components": ["libs/ui-components/src/index.ts"],
       "@printer-center/ui-components/*": ["libs/ui-components/src/*"]
     }

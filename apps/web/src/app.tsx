@@ -1,9 +1,11 @@
-import { Button } from '@printer-center/ui-components';
+import { Canvas } from '~/components/Canvas';
 
 export function App() {
   return (
-    <div>
-      <Button>Content</Button>
+    <div className="dot-grid h-full w-full pt-8">
+      <div className="flex justify-center">
+        <Canvas />
+      </div>
     </div>
   );
 }

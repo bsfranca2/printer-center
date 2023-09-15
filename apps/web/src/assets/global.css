@@ -25,6 +25,19 @@
     --input: 214.3 31.8% 91.4%;
     --ring: 221.2 83.2% 53.3%;
     --radius: 0.5rem;
+
+    --novel-black: rgb(0 0 0);
+    --novel-white: rgb(255 255 255);
+    --novel-stone-50: rgb(250 250 249);
+    --novel-stone-100: rgb(245 245 244);
+    --novel-stone-200: rgb(231 229 228);
+    --novel-stone-300: rgb(214 211 209);
+    --novel-stone-400: rgb(168 162 158);
+    --novel-stone-500: rgb(120 113 108);
+    --novel-stone-600: rgb(87 83 78);
+    --novel-stone-700: rgb(68 64 60);
+    --novel-stone-800: rgb(41 37 36);
+    --novel-stone-900: rgb(28 25 23);
   }
 
   .dark {
@@ -54,8 +67,29 @@
   * {
     @apply border-border;
   }
+  html,
+  body,
+  #root {
+    @apply h-full w-full;
+  }
   body {
     @apply bg-background text-foreground;
     font-feature-settings: 'rlig' 1, 'calt' 1;
   }
+}
+
+.dot-grid {
+  --dot-bg: #f9fafb;
+  --dot-color: #d1d5db;
+  --dot-size: 2px;
+  --dot-space: 24px;
+  background: linear-gradient(
+        90deg,
+        var(--dot-bg) calc(var(--dot-space) - var(--dot-size)),
+        transparent 1%
+      )
+      center / var(--dot-space) var(--dot-space),
+    linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center /
+      var(--dot-space) var(--dot-space),
+    var(--dot-color);
 }
